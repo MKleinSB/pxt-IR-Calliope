@@ -1,4 +1,4 @@
-//% weight=0 color=#87bc4b icon="\uf1eb" block="InfraRed"
+//% weight=0 color=#87bc4b icon="\uf1eb" block="Infrarot IR"
 namespace IR {
     export enum encodingType {
         //% block="NEC"
@@ -30,7 +30,7 @@ namespace IR {
     /**
      *  set the infrared LED pin.
      */
-    //% blockId=setIR_pin block="set IR LED pin: %myPin" blockExternalInputs=false
+    //% blockId=setIR_pin block="IR Sender an Pin: %myPin" blockExternalInputs=false
     //% weight=90 blockGap=10
     //% myPin.fieldEditor="gridpicker" myPin.fieldOptions.columns=4
     //% myPin.fieldOptions.tooltips="false" myPin.fieldOptions.width="300"
@@ -44,7 +44,7 @@ namespace IR {
     /**
      *  set the IR receiver pin.
      */
-    //% blockId=setREC_pin block="set IR receiver pin: %myPin" blockExternalInputs=false
+    //% blockId=setREC_pin block="Infrarotempfänge an Pin: %myPin" blockExternalInputs=false
     //% weight=85 blockGap=10
     //% myPin.fieldEditor="gridpicker" myPin.fieldOptions.columns=4
     //% myPin.fieldOptions.tooltips="false" myPin.fieldOptions.width="300"
