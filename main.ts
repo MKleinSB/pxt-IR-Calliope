@@ -30,7 +30,7 @@ namespace IR {
     /**
      *  set the infrared LED pin.
      */
-    //% blockId=setIR_pin block="IR Sender an Pin: %myPin" blockExternalInputs=false
+    //% blockId=setIR_pin block="IR Sender an Pin %myPin" blockExternalInputs=false
     //% weight=90 blockGap=10
     //% myPin.fieldEditor="gridpicker" myPin.fieldOptions.columns=4
     //% myPin.fieldOptions.tooltips="false" myPin.fieldOptions.width="300"
@@ -44,7 +44,7 @@ namespace IR {
     /**
      *  set the IR receiver pin.
      */
-    //% blockId=setREC_pin block="Infrarotempfänge an Pin: %myPin" blockExternalInputs=false
+    //% blockId=setREC_pin block="Infrarotempfänger an Pin %myPin" blockExternalInputs=false
     //% weight=85 blockGap=10
     //% myPin.fieldEditor="gridpicker" myPin.fieldOptions.columns=4
     //% myPin.fieldOptions.tooltips="false" myPin.fieldOptions.width="300"
@@ -65,7 +65,7 @@ namespace IR {
     /**
      * send message from IR LED. You must set the message encoding type, send how many times, and the message.
      */
-    //% blockId=sendMyMessage1 block="send message: %msg| ,%times| times, encoding type:%myType"
+    //% blockId=sendMyMessage1 block="sende IR-Code %msg| ,%times| mal, mit der Codierung %myType"
     //% weight=80 blockGap=10
     export function sendMyMessage1(msg: string, times: number, myType: encodingType): void {
         if (send_init) {
@@ -77,7 +77,7 @@ namespace IR {
     /**
      * send message from IR LED. You must set the message encoding type, send how many times, and the message.
      */
-    //% blockId=sendMyMessage2 block="send message: %msg| ,%times| times, encoding type:%myType"
+    //% blockId=sendMyMessage2 block="sende IR-Code %msg| ,%times| mal, mit der Codierung %myType"
     //% weight=75 blockGap=10
     export function sendMyMessage2(msg: string, times: number, myType: string): void {
         if (send_init) {
@@ -229,7 +229,7 @@ namespace IR {
             } else {
                 myStr = tempMod + myStr
             }
-            tempDiv = tempDiv / 16  // Math.idiv(tempDiv, 16) geändert wegen Calliope V1-Core
+            tempDiv = tempDiv / 16  // Math.idiv(tempDiv, 16) geändert wegen Calliope V0-Core
         }
         while (myStr.length != digits) {
             myStr = "0" + myStr
@@ -240,7 +240,7 @@ namespace IR {
     /**
      * Do something when a receive IR
      */
-    //% blockId=onReceivedIR block="on IR message received" blockInlineInputs=true
+    //% blockId=onReceivedIR block="wenn IR Code empfangen" blockInlineInputs=true
     //% weight=70 blockGap=10
     export function onReceivedIR(handler: Action): void {
         tempHandler = handler
@@ -250,7 +250,7 @@ namespace IR {
     /**
      * return the encoding type of the received IR 
      */
-    //% blockId=getRecType block="the received IR encoding type"
+    //% blockId=getRecType block="die empfangene IR Codierung"
     //% weight=60 blockGap=10
     export function getRecType(): string {
         return rec_Type
@@ -259,7 +259,7 @@ namespace IR {
     /**
      * return the message of the received IR 
      */
-    //% blockId=getMessage block="the received IR message"
+    //% blockId=getMessage block="die empfangene IR Nachricht"
     //% weight=60 blockGap=10
     export function getMessage(): string {
         return messageStr
