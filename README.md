@@ -1,24 +1,15 @@
 # pxt-ir-calliope
 
-
-
-## TODO
-
-- [ ] Add a reference for your blocks here
-- [ ] Add "icon.png" image (300x200) in the root folder
-- [ ] Add "- beta" to the GitHub project description if you are still iterating it.
-- [ ] Turn on your automated build on https://travis-ci.org
-- [ ] Use "pxt bump" to create a tagged release on GitHub
-- [ ] Get your package reviewed and approved https://makecode.microbit.org/packages/approval
-
-Read more at https://makecode.microbit.org/packages/build-your-own
+Blöcke um eine Infrarotfernbedienung mit dem Calliope Mini und dem Seeed-IR-Receiver auszulesen bzw. mit dem Grove Infrared Emitter Dinge mit dem Calliope Mini anzusteuern. Original unter https://github.com/lioujj/pxt-IR.
+Einige Dinge mussten für den Calliope Mini geändert werden aber jetzt scheint es einwandfrei zu laufen.
 
 ## License
 
+MIT License
 
 
 ## Supported targets
 
-* for PXT/microbit
-(The metadata above is needed for package search.)
+* for PXT/Calliope
+
 
