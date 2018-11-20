@@ -1,3 +1,8 @@
+// MakeCode blocks for Infrared
+// Original Code by 劉正吉 https://github.com/lioujj/pxt-IR
+// MIT License
+// Changes for Calliope Mini by M. Klein
+//
 //% weight=0 color=#87bc4b icon="\uf1eb" block="Infrarot IR"
 namespace IR {
     export enum encodingType {
@@ -85,6 +90,8 @@ namespace IR {
         if (send_init) {
             if (myType == "NEC") {
                 sendMessage(convertHexStrToNum(msg), times, encodingType.NEC);
+            } else if (myType == "SONY") {
+                sendMessage(convertHexStrToNum(msg), times, encodingType.SONY); 
             }
         }
     }
