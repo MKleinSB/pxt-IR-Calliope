@@ -81,6 +81,7 @@ namespace IR {
             //})
         }
     }
+    
     /**
      * send message from IR LED. You must set the message encoding type, send how many times, and the message.
      */

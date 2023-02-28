@@ -14,5 +14,12 @@
         "test.ts"
     ],
     "public": false,
-    "installedVersion": "workspace:9b07e01e-8907-4dba-cf59-d37bed79437e"
+    "targetVersions": {
+        "target": "4.0.29",
+        "targetId": "calliopemini"
+    },
+    "supportedTargets": [
+        "calliopemini"
+    ],
+    "preferredEditor": "tsprj"
 }
